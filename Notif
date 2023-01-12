@@ -23,7 +23,7 @@ local Tween = function(I, T, S, D, G, RT)
 	end
 end
 
-if Core:FindFirstChild("NordNotifications") then Core:FindFirstChild("NordNotifications"):Destroy() end
+if Core:FindFirstChild("W3aveNotifications") then Core:FindFirstChild("W3aveNotifications"):Destroy() end
 local UI = New("ScreenGui", {
 	["IgnoreGuiInset"] = true; ["Name"] = "W3ave"; ["ResetOnSpawn"] = false; ["ZIndexBehavior"] = "Global"
 }); protectGui(UI); UI["Parent"] = Core;
