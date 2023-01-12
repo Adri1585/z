@@ -23,9 +23,9 @@ local Tween = function(I, T, S, D, G, RT)
 	end
 end
 
-if Core:FindFirstChild("W3aveNotifications") then Core:FindFirstChild("W3aveNotifications"):Destroy() end
+if Core:FindFirstChild("NordNotifications") then Core:FindFirstChild("NordNotifications"):Destroy() end
 local UI = New("ScreenGui", {
-	["IgnoreGuiInset"] = true; ["Name"] = "W3ave"; ["ResetOnSpawn"] = false; ["ZIndexBehavior"] = "Global"
+	["IgnoreGuiInset"] = true; ["Name"] = "NordNotifications"; ["ResetOnSpawn"] = false; ["ZIndexBehavior"] = "Global"
 }); protectGui(UI); UI["Parent"] = Core;
 
 local NotificationHolder = New("Frame", {
@@ -33,11 +33,11 @@ local NotificationHolder = New("Frame", {
 }); New("UIListLayout", {Parent = NotificationHolder, Padding = UDim.new(0, 15), HorizontalAlignment = "Center", VerticalAlignment = "Bottom"});
 New("UIPadding", {Parent = NotificationHolder, PaddingBottom = UDim.new(0, 20), PaddingTop = UDim.new(0, 20)});
 
-local W3ave = {};
+local Nord = {};
 
-W3ave["Config"] = { ["Theme"] = "Dark" }
+Nord["Config"] = { ["Theme"] = "Dark" }
 
-W3ave["Themes"] = {
+Nord["Themes"] = {
     ["light"] = {
         ["Frame"] = {
             ["BackgroundColor3"] = Color3.new(1, 1, 1);
