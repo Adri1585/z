@@ -33,11 +33,11 @@ local NotificationHolder = New("Frame", {
 }); New("UIListLayout", {Parent = NotificationHolder, Padding = UDim.new(0, 15), HorizontalAlignment = "Center", VerticalAlignment = "Bottom"});
 New("UIPadding", {Parent = NotificationHolder, PaddingBottom = UDim.new(0, 20), PaddingTop = UDim.new(0, 20)});
 
-local Nord = {};
+local W3ave = {};
 
-Nord["Config"] = { ["Theme"] = "Dark" }
+W3ave["Config"] = { ["Theme"] = "Dark" }
 
-Nord["Themes"] = {
+W3ave["Themes"] = {
     ["light"] = {
         ["Frame"] = {
             ["BackgroundColor3"] = Color3.new(1, 1, 1);
